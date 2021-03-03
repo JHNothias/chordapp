@@ -149,7 +149,7 @@ def computeHStats(cvCif):
 
     return np.array([hc, hv, hi, cohi])
 
-# Quick and dirty way of showing a chords stats.
+# Quick and dirty way of showing a chord's stats.
 def printHStats(cvCif):
     hc, hv, hi, cohi = computeHStats(cvCif)
     print('Harmonic center =   ', hc)

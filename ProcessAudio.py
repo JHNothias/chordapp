@@ -14,7 +14,7 @@ smoothout = lambda data, smw, mode='valid': np.convolve(data, np.ones(smw)/smw, 
 getChromagram = lambda y, sr: chroma_stft(y, sr)
 
 
-getPerceptuallyAdjustedChromagram = lambda y, sr: chroma_stft(S = perceptual_weighting(cqt(y, n_bins=84, sr = sr, fmin = (f_min := note_to_hz('C2'))), cqt_frequencies(84, fmin = f_min), kind="D"), sr = sr)
+getPerceptuallyAdjustedChromagram = lambda y, sr: chroma_stft(S = perceptual_weighting(cqt(y, n_bins=84, sr = sr, fmin = (f_min := note_to_hz('C2'))), cqt_frequencies(84, fmin = f_min), kind="A"), sr = sr)
 
 @nb.jit
 def quickprocessChromagram(Chro, treshold=0):
