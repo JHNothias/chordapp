@@ -588,7 +588,7 @@ def Application():
     """
     print('initialisation...')
     App = QApplication(sys.argv)
-    App.setApplicationName("Why do things sound major? :p")
+    App.setApplicationName("Harmonic quality")
     App.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
 
     # Setup Namespaces ---
